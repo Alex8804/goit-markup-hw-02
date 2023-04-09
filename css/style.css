@@ -103,24 +103,22 @@ body {
   color: #ffffff;
 }
 .hero-btn {
-color: #FFFFFF;  
-font-family: var(--primary-font);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-letter-spacing: 0.04em;
-background: #4D5AE5;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;  
+  color: #ffffff;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
-
-
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #404BBF;
+  background: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -210,6 +208,15 @@ border-radius: 4px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
 }
 
 .filters-btn:hover,
@@ -228,7 +235,7 @@ border-radius: 4px;
   height: 420px;
 }
 
-.projekts-title {
+.projects-title {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 20px;
