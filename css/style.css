@@ -1,3 +1,11 @@
+:root {
+--accent-color:#404bbf;
+--primary-font:'Roboto', sans-serif;
+--secondary-font:'Raleway', sans-serif;
+--primary-text-color:#434455; 
+--secondary-text-color:#2E2F42;
+}
+
 .link {
   text-decoration: none;
 }
@@ -7,36 +15,55 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
+  font-family:var(--primary-font);
+  color:var(--primary-text-color);
 }
+
 /* =================HEADER================= */
 
+.logotype {
+font-family:var(--secondary-font);
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #4D5AE5;
+}
+.logotype-right {
+color: #2E2F42;  
+}
+
+
 .menu-link {
-  font-weight: 500;
+  font-family:var(--primary-font);
+  font-weight: 500; 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--secondary-text-color);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #404bbf;
+  color: var(--accent-color);
 }
 
 .contact-mail,
 .phone-number {
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--primary-text-color);
 }
 .contacts:hover,
 .contacts:focus {
-  color: #404bbf;
+color: var(--accent-color);
 }
 
 /* ====================FOOTER==================== */
@@ -46,10 +73,15 @@ background: #2E2F42;
 }
 
 .footer-desc {
+font-family: var(--primary-font);
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #F4F4FD;    
+}
+
+.footer-logotype-right {
+color: #F4F4FD;
 }
 
 /* =================MAIN CONTENT================= */
@@ -60,6 +92,7 @@ color: #F4F4FD;
 }
 
 .hero-title {
+  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -74,33 +107,38 @@ color: #F4F4FD;
   border-radius: 4px;
   width: 169px;
   height: 56px;
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #404bbf;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
 /* =============Features============= */
 
-.advantages-list {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.advantages-title {
+font-family: var(--primary-font);
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--secondary-text-color);  
 }
+
 .adventages-text {
-  font-weight: 400;
+  font-family: var(--primary-font);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 /* ==========What are we doing========== */
 
 .our-work-title {
+  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -117,6 +155,7 @@ color: #F4F4FD;
 }
 
 .team-title {
+font-family: var(--primary-font);  
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -135,32 +174,61 @@ height: 380px;
 }
 
 .workers-title {
+font-family: var(--primary-font);
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: 0.02em;
-color: #2E2F42;
+color: var(--secondary-text-color);
 }
 
 .workers-desc {
+font-family: var(--primary-font);
 font-size: 16px;
 line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
+color: var(--primary-text-color);
 }
 
 /* =================PORTFOLIO================= */
 
 .filters-btn {
+color: #4D5AE5;    
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
+cursor: pointer;
 }
 
 .filters-btn:hover,
 .filters-btn:focus {
-background: #404BBF;
+color: #FFFFFF;
+background: var(--accent-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;    
+}
+
+.projects-list-item {
+background: #FFFFFF;
+border: 1px solid #E7E9FC;  
+width: 360px;
+height: 420px;
+}
+
+.projekts-title {
+font-family: var(--primary-font);
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--secondary-text-color);
+}
+.projects-desc {
+font-family: var(--primary-font);
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
 }
